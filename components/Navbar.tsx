@@ -40,7 +40,7 @@ const Navbar = () => {
     }
   }
   return (
-    <div className="w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4">
+    <div className="w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-lightGray px-4">
       <div className="max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between ">
         {/* ============ Logo Start here ============ */}
         <Link href="/">
@@ -57,7 +57,7 @@ const Navbar = () => {
         <div className="hidden mdl:inline-flex items-center gap-7">
           <ul className="flex text-[13px] gap-7">
             <Link
-              className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
+              className="flex items-center gap-1 font-medium text-textBlack hover:text-textGreen cursor-pointer duration-300 nav-link"
               href="#home"
               onClick={handleScroll}
             >
@@ -71,7 +71,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
+              className="flex items-center gap-1 font-medium text-textBlack hover:text-textGreen cursor-pointer duration-300 nav-link"
               href="#about"
               onClick={handleScroll}
             >
@@ -85,7 +85,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
+              className="flex items-center gap-1 font-medium text-textBlack hover:text-textGreen cursor-pointer duration-300 nav-link"
               href="#experience"
               onClick={handleScroll}
             >
@@ -99,7 +99,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
+              className="flex items-center gap-1 font-medium text-textBlack hover:text-textGreen cursor-pointer duration-300 nav-link"
               href="#project"
               onClick={handleScroll}
             >
@@ -113,7 +113,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
+              className="flex items-center gap-1 font-medium text-textBlack hover:text-textGreen cursor-pointer duration-300 nav-link"
               href="#contact"
               onClick={handleScroll}
             >
@@ -149,7 +149,9 @@ const Navbar = () => {
         </div>
         {show && (
           <div
-            ref={(node) => (ref.current = node)}
+            ref={(node) => {
+              ref.current = node;
+            }}          
             onClick={handleClick}
             className="absolute mdl:hidden top-0 right-0 w-full h-screen  bg-black bg-opacity-50 flex flex-col items-end"
           >
