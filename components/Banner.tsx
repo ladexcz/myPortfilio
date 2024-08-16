@@ -21,7 +21,7 @@ const Banner = () => {
       >
         Gerald Cahanza.
         <span className="text-textDark mt-2 lgl:mt-4">
-          Your Virtual Assistant!
+          Web developer!
         </span>
       </motion.h1>
       <motion.p
