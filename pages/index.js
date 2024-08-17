@@ -35,8 +35,9 @@ export default function Home() {
             <Banner />
             <About />
             <Experience />
-            <Projects />
+            
             <Archive />
+            <Projects />
             <Contact />
             <Footer />
           </div>
